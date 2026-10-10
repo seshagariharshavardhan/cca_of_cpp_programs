@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+struct Student {
+    float m1, m2, m3;
+};
+
+int main() {
+    Student s;
+
+    cout << "Enter three subject marks: ";
+    cin >> s.m1 >> s.m2 >> s.m3;
+
+    float avg = (s.m1 + s.m2 + s.m3) / 3;
+
+    cout << "Average = " << avg;
+    return 0;
+}
