@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+union Data {
+    int i;
+    float f;
+    char c;
+    double d;
+};
+
+int main() {
+    cout << "Size of union = " << sizeof(Data)
+         << " bytes";
+
+    return 0;
+}
