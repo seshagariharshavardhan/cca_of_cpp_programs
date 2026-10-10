@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+union EmployeeData {
+    int id;
+    float salary;
+};
+
+int main() {
+    EmployeeData e;
+
+    e.id = 101;
+    cout << "Employee ID = " << e.id;
+
+    e.salary = 25000.50f;
+    cout << "\nEmployee salary = " << e.salary;
+
+    return 0;
+}
