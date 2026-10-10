@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+enum Signal { RED = 1, YELLOW, GREEN };
+
+int main() {
+    Signal s = GREEN;
+
+    switch (s) {
+        case RED:
+            cout << "Stop";
+            break;
+        case YELLOW:
+            cout << "Wait";
+            break;
+        case GREEN:
+            cout << "Go";
+            break;
+    }
+
+    return 0;
+}
