@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+enum Day {
+    Monday = 1, Tuesday, Wednesday, Thursday,
+    Friday, Saturday, Sunday
+};
+
+int main() {
+    Day d = Wednesday;
+    cout << "Day number = " << d;
+    return 0;
+}
