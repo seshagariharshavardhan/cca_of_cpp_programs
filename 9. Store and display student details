@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+struct Student {
+    int roll;
+    char name[30];
+    float marks;
+};
+
+int main() {
+    Student s;
+
+    cout << "Enter roll number, name and marks: ";
+    cin >> s.roll >> s.name >> s.marks;
+
+    cout << "\nRoll number: " << s.roll;
+    cout << "\nName: " << s.name;
+    cout << "\nMarks: " << s.marks;
+
+    return 0;
+}
