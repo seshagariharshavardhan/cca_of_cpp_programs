@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+enum Grade { FAIL, PASS, GOOD, EXCELLENT };
+
+int main() {
+    Grade g = EXCELLENT;
+
+    cout << "Grade value = " << g;
+    return 0;
+}
