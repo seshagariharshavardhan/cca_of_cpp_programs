@@ -1,3 +1,4 @@
+
 #include <iostream>
 using namespace std;
 
@@ -5,22 +6,25 @@ int main() {
     int a[5], key;
     bool found = false;
 
-    for (int i = 0; i < 5; i++)
+    cout << "Enter 5 elements: ";
+    for (int i = 0; i < 5; i++) {
         cin >> a[i];
+    }
 
     cout << "Enter element to search: ";
     cin >> key;
 
     for (int i = 0; i < 5; i++) {
         if (a[i] == key) {
-            cout << "Found at position " << i + 1;
+            cout << "Element found at position " << i + 1;
             found = true;
             break;
         }
     }
 
-    if (!found)
+    if (!found) {
         cout << "Element not found";
+    }
 
     return 0;
 }
